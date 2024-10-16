@@ -22,7 +22,6 @@ import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.bouncycastle.crypto.digests.MD5Digest;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.openpgp.PGPSignature;
@@ -216,7 +215,7 @@ public class DebMaker {
     }
 
     public void setSignDigest(String digest) {
-        this.signDigest = signDigest;
+        this.signDigest = digest;
     }
 
 
